@@ -1,13 +1,9 @@
-// This is sample application 
-// Create REST endpoint which accepts 2 numbers and returns sum 
+const {credentials} = require('./config');
 
 const mysql = require('mysql');
 
 const connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: 'password',
-  database: 'my_database'
+    ...credetntials  
 });
 
 connection.connect((error) => {
